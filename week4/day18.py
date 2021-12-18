@@ -65,10 +65,9 @@ def magnitude(node: Node):
     return 3 * magnitude(node.left) + 2 * magnitude(node.right)
 
 def explode(node: Node, depth: int):
-    if node.val is None and node.left.val is not None and node.right.val is not None and depth >= 4:
+    if node.val is None and depth >= 4:
         increase_left(node, node.left.val)
         increase_right(node, node.right.val)
-
         node.left = None
         node.right = None
         node.val = 0
