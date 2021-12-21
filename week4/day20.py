@@ -42,7 +42,7 @@ for step in range(50):
     new_picture = [['.' for _ in range(padding * 2 + M)] for __ in range(padding * 2 + N)]
     for i in range(len(picture)):
         for j in range(len(picture[i])):
-            new_picture[i][j] = find_pixel(i, j, picture, '0')
+            new_picture[i][j] = find_pixel(i, j, picture)
     picture = new_picture
 
 print(sum(r[100:-100].count('#') for r in picture[100:-100]))
