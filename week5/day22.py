@@ -66,7 +66,6 @@ for j, line in enumerate(lines):
             xs = sorted([cube.xa, cube.xb, new_cube.xa, new_cube.xb])
             ys = sorted([cube.ya, cube.yb, new_cube.ya, new_cube.yb])
             zs = sorted([cube.za, cube.zb, new_cube.za, new_cube.zb])
-
             for x1, x2 in zip(xs, xs[1:]):
                 for y1, y2 in zip(ys, ys[1:]):
                     for z1, z2 in zip(zs, zs[1:]):
